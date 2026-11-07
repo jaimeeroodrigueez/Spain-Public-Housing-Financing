@@ -1,0 +1,8 @@
+numpy>=1.24,<3
+pandas>=2.0,<3
+scipy>=1.10,<2
+matplotlib>=3.7,<4
+requests>=2.31,<3
+beautifulsoup4>=4.12,<5
+ipython>=8
+jupyterlab>=4
