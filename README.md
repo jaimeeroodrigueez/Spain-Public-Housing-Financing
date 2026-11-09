@@ -72,6 +72,7 @@ These are **not annual flat payments**, fiscal spending capacity estimates or di
 .
 ├── README.md
 ├── requirements.txt
+├── LICENSE
 ├── .gitignore
 ├── notebooks/
 │   ├── Spain_Public_Housing_Financing_Model_v27.ipynb
@@ -79,10 +80,8 @@ These are **not annual flat payments**, fiscal spending capacity estimates or di
 ├── data/
 │   ├── spanish_yield_curve_2026_10_28.csv
 │   └── tesoro_outstanding_bonds_2026_10_31_by_reference.csv
-├── results/
-│   └── 11 reported output CSVs from v27
-└── tests/
-    └── test_published_results.py
+└── results/
+    └── 11 reported output CSVs from v27
 ```
 
 ## Reproduce the analysis
@@ -90,7 +89,7 @@ These are **not annual flat payments**, fiscal spending capacity estimates or di
 Requires **Python 3.10+**. From a terminal:
 
 ```bash
-git clone https://github.com/<YOUR-USERNAME>/Spain-Public-Housing-Financing.git
+git clone https://github.com/jaimeeroodrigueez/Spain-Public-Housing-Financing.git
 cd Spain-Public-Housing-Financing
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
@@ -100,17 +99,9 @@ jupyter lab notebooks/Spain_Public_Housing_Financing_Model_v27.ipynb
 
 **Important:** Launch Jupyter **from the repository root**, so that the model reads `data/` and writes `results/`. Running it from `notebooks/` also works because it searches the parent `data/` folder. In Colab, clone the repository and use `%cd /content/Spain-Public-Housing-Financing` before running the notebook. Opening the notebook directly from GitHub in Colab without cloning its data files will not suffice.
 
-The GitHub notebook differs from the research v27 notebook **only in its paths for locating input CSVs and saving output CSVs**. It does not change the programme inputs, optimisation objective, constraints or financial results.
+The GitHub notebook retains the model's calculations while using repository-relative paths for input and output files. Its saved visual outputs are provided for inspection; temporary Colab execution metadata has been removed. It does not change the programme inputs, optimisation objective, constraints or financial results.
 
 The **official-data preparation notebook** documents the extraction of the historical yield curve and Treasury portfolio. Since the original official websites may change, reproducing extraction for the historical snapshot may require archived official source pages; the fixed input CSVs needed for the financing model are included under `data/`.
-
-### Check published data without re-running the optimiser
-
-```bash
-python -m unittest discover -s tests -v
-```
-
-The tests verify the reference scenario, horizon count, historical rate inputs and debt-portfolio benchmarks. They are **not a substitute for independently executing the optimisation** or externally validating the assumed costs.
 
 ## Main outputs
 
