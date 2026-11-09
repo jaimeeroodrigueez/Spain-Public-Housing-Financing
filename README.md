@@ -114,7 +114,7 @@ The tests verify the reference scenario, horizon count, historical rate inputs a
 
 ## Main outputs
 
-`results/` contains eleven CSVs, including the full horizon comparison, the interest–budget frontier, the bond-issuance portfolio, annual financial ledger, refinancing risk, residual maturity comparisons, rental provisions and post-repayment cash. Their precise filenames are generated and documented by the last code cell of the model notebook.
+`results/` contains 11 CSVs, including the full horizon comparison, the interest–budget frontier, the bond-issuance portfolio, annual financial ledger, refinancing risk, residual maturity comparisons, rental provisions and post-repayment cash. Their precise filenames are generated and documented by the last code cell of the model notebook.
 
 ## Limitations
 
