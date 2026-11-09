@@ -128,4 +128,4 @@ The exercise does not establish whether the Spanish budget has room to fund thes
 
 ## License
 
-**No reuse license has been selected yet.** Before enabling reuse of the code beyond viewing/forking permitted by GitHub's terms, the project owner should explicitly choose an appropriate open-source license; no license is implied by this repository.
+The project's original software code and accompanying software documentation are available under the [MIT License](LICENSE) (copyright © 2026 Jaime Rodríguez Almendros). Third-party data and source material, including Banco de España and Tesoro Público datasets, remain subject to their respective terms and are not relicensed by this notice.
